@@ -45,7 +45,7 @@ export default function About() {
 
           <div className="flex gap-3 sm:justify-evenly">
             <a
-              className="border-none text-2xl rounded-full sm:p-4 text-light dark:text-dark sm:text-3xl flex items-center focus:scale-[1.08] hover:scale-[1.08] hover:text-gray-600 active:scale-105 transition cursor-pointer"
+              className="border-none text-2xl rounded-full sm:p-4 text-light dark:text-dark sm:text-3xl flex items-center focus:scale-[1.08] hover:scale-[1.08]  active:scale-105 transition cursor-pointer"
               href="https://www.linkedin.com/in/yuvraj-singh-bhadouria-7b1b8121b/"
               target="_blank"
             >
@@ -53,7 +53,7 @@ export default function About() {
             </a>
 
             <a
-              className="border-none text-[1.7rem] text-light dark:text-orange-600 flex items-center sm:text-[2.3rem] rounded-full focus:scale-[1.08] hover:scale-[1.08] hover:text-[#959DA2] active:scale-105 transition cursor-pointer"
+              className="border-none text-[1.7rem] text-light dark:text-orange-600 flex items-center sm:text-[2.3rem] rounded-full focus:scale-[1.08] hover:scale-[1.08]  active:scale-105 transition cursor-pointer"
               href="https://github.com/yuvrajzingh"
               target="_blank"
             >

@@ -88,16 +88,15 @@ export default function Contact() {
         <SectionDivider className="sm:w-0.5 sm:h-auto" />
         <div className="flex items-center justify-between sm:flex-col sm:justify-between">
           <SectionHeading>
-            <BsArrowDownLeft className="hidden w-5 mr-2 mt-1 sm:block" />
-            <BsArrowDownRight className="w-5 mr-1 mt-1.5 sm:hidden" />
+            <BsArrowDownLeft className="hidden w-5 mr-2 mt-1 sm:block sm:pt-1 " />
             (CONTACT ME)
+            <BsArrowDownRight className="w-5 ml-2 mt-1  sm:hidden" />
           </SectionHeading>
           <Image
             src={map}
             alt="contact image"
             width="492"
-            quality="95"
-            priority={true} // to load as fast as possible
+            quality="100"
             className="hidden sm:block"
           />
         </div>

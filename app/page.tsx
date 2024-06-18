@@ -1,6 +1,8 @@
-"use client"
 
-// pages/index.tsx (or pages/page.tsx)
+
+
+"use client";
+
 import React, { useState, useEffect } from 'react';
 import { AnimatePresence, motion, useScroll, useSpring } from 'framer-motion';
 import LoadingScreen from '@/components/LoadingScreen';
@@ -15,37 +17,46 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
+  const [showWelcome, setShowWelcome] = useState(false);
   const [showContent, setShowContent] = useState(false);
-  const [showWelcome, setShowWelcome] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 3300); // Simulate loading duration, adjust as needed
+    const hasVisited = sessionStorage.getItem('hasVisited');
 
-    return () => clearTimeout(timer);
+    if (hasVisited) {
+      setLoading(false);
+      setShowContent(true);
+    } else {
+      const timer = setTimeout(() => {
+        setLoading(false);
+        setShowWelcome(true);
+      }, 3300); // Simulate loading duration
+
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   useEffect(() => {
-    if (!loading) {
-      const welcomeTimer = setTimeout(() => {
+    if (!loading && showWelcome) {
+      const welcomeTimer = setTimeout(()=>{
         setShowWelcome(false);
-        const contentTimer = setTimeout(() => {
+        sessionStorage.setItem('hasVisited', 'true');
+        const contentTimer = setTimeout(()=>{
           setShowContent(true);
-        }, 500); // Transition delay after hiding welcome message
-        return () => clearTimeout(contentTimer);
-      }, 2000); // Duration to display the welcome message
+        }, 500);
+        return ()=> clearTimeout(contentTimer);
+      }, 2000);
       return () => clearTimeout(welcomeTimer);
     }
-  }, [loading]);
+  }, [loading, showWelcome]);
 
+  
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
-    restDelta: 0.001
+    restDelta: 0.001,
   });
-
 
   return (
     <AnimatePresence>
@@ -63,9 +74,9 @@ export default function Home() {
           </motion.div>
         </div>
       )}
-      {!loading && showContent && (
+      {!loading && !showWelcome && showContent && (
         <main className="flex flex-col items-center px-4">
-          <motion.div className='fixed top-0 left-0 right-0 h-1 bg-red-500 dark:bg-orange-500 origin-top-left z-20' style={{ scaleX }}/>
+          <motion.div className='fixed top-0 left-0 right-0 h-1 bg-red-500 dark:bg-orange-500 origin-top-left z-20' style={{ scaleX }} />
           <Header />
           <Intro />
           <About />
