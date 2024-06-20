@@ -2,8 +2,8 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
+import sociopedia from "@/public/sociopedia.png";
+import rmtdevImg from "@/public/cartify.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
@@ -61,14 +61,16 @@ export const projectsData = [
     title: "Sciopedia",
     description:
       "A social networking application for niche communities.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    tags: ["Next.js", "React", "TypeScript", "MongoDB", "Tailwind"],
+    link: "https://sociopedia-yuzi.vercel.app/",
+    imageUrl: sociopedia,
   },
   {
     title: "rmtDev",
     description:
       "An admin Dashboard.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    link: "/",
     imageUrl: rmtdevImg,
   },
   {
@@ -76,6 +78,7 @@ export const projectsData = [
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    link: "/",
     imageUrl: wordanalyticsImg,
   },
 ] as const;

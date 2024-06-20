@@ -24,7 +24,7 @@ export default function Intro() {
     >
       <div className="w-[85vw]  mt-2 sm:py-12 sm:mb-[5rem] sm:flex sm:justify-center sm:items-center">
         <div className="flex flex-col sm:flex-row sm:items-center gap-10">
-        <div className="relative text-[3.3rem] sm:text-[7.5rem] font-normal leading-none text-left">
+        <div className="relative text-[3.3rem] sm:text-[7.5rem] font-normal leading-none text-left ml-3 sm:ml-0">
         <motion.div
         initial={{ clipPath: 'inset(100% 0 0 0)' }}
         animate={{ clipPath: 'inset(0% 0 0 0)' }}
