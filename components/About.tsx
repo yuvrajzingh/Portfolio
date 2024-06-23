@@ -25,14 +25,15 @@ export default function About() {
 
       {/* <ParallaxTitle baseVelocity={-50}>ABOUT</ParallaxTitle> */}
 
-      <div className="flex py-2 sm:py-10 flex-col-reverse sm:flex-row">
+      <div className="flex py-2 text-2xl sm:text-6xl sm:py-10 flex-col-reverse sm:flex-row font-semibold text-lightText dark:text-darkText">
         <div className="max-w-[70rem]">
-          <p className="mt-3 text-2xl font-semibold sm:text-5xl sm:mb-3 px-5">
-            I'm a Final Year Student , blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah, blah.
+          <p className="mt-3 sm:mb-3 px-5">
+          As a Full Stack Developer, I focus on producing top-notch and impactful Web Applications.
           </p>
 
-          <p className="mb-3 text-2xl font-semibold sm:text-5xl px-5 mt-10">
-            I focus on Simplicity and Aesthetics while creating Apps.
+          <p className="mb-3 px-5 mt-10">
+            I Focus on Simplicity and Aesthetics while 
+            Creating Apps.
           </p>
         </div>
         <SectionDivider className="sm:w-0.5 sm:h-auto" />

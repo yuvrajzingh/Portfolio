@@ -41,9 +41,9 @@ export default function Contact() {
       }}
     >
       <SectionDivider className="" />
-      <div className="flex py-2 sm:py-10 flex-col-reverse sm:flex-row sm:justify-evenly">
+      <div className="flex py-2 sm:py-10 flex-col-reverse sm:flex-row sm:justify-evenly text-lightText dark:text-darkText">
         <form
-          className="mt-10 flex flex-col dark:text-black"
+          className="mt-10 flex flex-col dark:text-black max-w-3xl"
           action={async (formData) => {
             const { data, error } = await sendEmail(formData);
 
@@ -57,12 +57,13 @@ export default function Contact() {
             setMessage("");
           }}
         >
-          <p className="text-gray-700 mb-5 dark:text-white/80">
+          <p className="text-lg font-semibold text-lightText mb-5 dark:text-darkText">
             PLEASE CONTACT ME DIRECTLY AT{" "}
-            <a className="underline" href="mailto:example@gmail.com">
-              yuvisingh1810@gmail.com
+            <a className="underline" href="mailto:yuvisingh1810@gmail.com">
+              YUVISINGH1810@GMAIL.COM
             </a>{" "}
             OR THROUGH THIS FORM.
+          <p className="text-lg text-lightText mt-5 dark:text-darkText">CURRENTLY SEEKING NEW OPPORTUNITIES.</p>
           </p>
           <input
             className="h-14 px-4 rounded-[5px] borderBlack bg-white/100 dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"

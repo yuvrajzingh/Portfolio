@@ -3,7 +3,8 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import sociopedia from "@/public/sociopedia.png";
-import rmtdevImg from "@/public/cartify.png";
+import cartify from "@/public/cartify.png";
+import dropboxv2 from "@/public/dropboxv2.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
@@ -48,7 +49,7 @@ export const experiencesData = [
     title: "Full-Stack Developer Intern",
     subtitle: "",
     location: "Kanpur, India",
-    oragnization: "C3iHub",
+    oragnization: "C3iHub, IIT Kanpur",
     description:
       "I worked as a FullStack developer for C3iHub and handled important projects.",
     icon: React.createElement(CgWorkAlt),
@@ -60,26 +61,29 @@ export const projectsData = [
   {
     title: "Sciopedia",
     description:
-      "A social networking application for niche communities.",
+      "A niche community-focused Social Networking and Microblogging application.",
     tags: ["Next.js", "React", "TypeScript", "MongoDB", "Tailwind"],
     link: "https://sociopedia-yuzi.vercel.app/",
+    gitRepo: "https://github.com/yuvrajzingh/Sociopedia",
     imageUrl: sociopedia,
   },
   {
-    title: "rmtDev",
+    title: "Dropbox 2.0",
     description:
-      "An admin Dashboard.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    link: "/",
-    imageUrl: rmtdevImg,
+      "A file storage system to keep your files synchronized and make them accessible from anywhere.",
+    tags: ["Next.JS", "TypeScript", "Firestore", "Clerk", "Redux"],
+    link: "https://dropbox-v2.vercel.app/",
+    gitRepo: "https://github.com/yuvrajzingh/Dropbox-2.0",
+    imageUrl: dropboxv2,
   },
   {
-    title: "Word Analytics",
+    title: "Cartify",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "A platform that provides businesses a way to manage, visualize, and analyze their data.",
+    tags: ["React", "Tailwind", "Syncfusion EJ2"],
     link: "/",
-    imageUrl: wordanalyticsImg,
+    gitRepo: "https://github.com/yuvrajzingh/cartify-admin-dashboard",
+    imageUrl:  cartify,
   },
 ] as const;
 

@@ -24,7 +24,7 @@ const SectionDivider = ({ className }: any) => {
   return (
     <motion.div
       ref={ref}
-      className={`${className} bg-black h-0.5 w-full rounded-full mt-2 dark:bg-gray-300`}
+      className={`${className} bg-gray-700 h-0.5 w-full rounded-full mt-2 dark:bg-gray-300`}
       initial={{ opacity: 0 }}
       animate={controls}
     ></motion.div>

@@ -33,7 +33,7 @@ const LoadingScreen: React.FC = () => {
   // }, [isLoaded]);
 
   return (
-    <div className="fixed top-0 left-0 w-full h-full flex text-slate-950 items-center justify-center bg-white dark:text-white dark:bg-black z-50">
+    <div className="fixed top-0 left-0 w-full h-full flex text-lightText items-center justify-center bg-white dark:text-darkText dark:bg-black z-50">
       <AnimatePresence>
           <div className="flex flex-row items-center">
             <div className="bg-none w-1 h-64 rounded-full overflow-hidden relative">
@@ -45,7 +45,7 @@ const LoadingScreen: React.FC = () => {
               />
             </div>
             <motion.div
-              className="text-[7rem] sm:text-[10rem] font-semibold text-slate-950 dark:text-white"
+              className="text-[7rem] sm:text-[10rem] font-semibold  dark:text-white"
               initial={{ y: '100%' }}
               animate={{ y: `${100 - loadingPercentage}%` }}
               transition={{ duration: 0.3 }}
