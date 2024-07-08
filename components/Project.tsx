@@ -98,9 +98,9 @@ export default function Project({
   animate={{ opacity: 1, x: 0 }}
   transition={{ duration: 0.3 }}
   className="absolute top-2 left-2 sm:group-hover:opacity-100 sm:group-hover:translate-x-0 sm:opacity-0 sm:group-even:right-2 sm:group-even:left-auto sm:left-2 
-    px-3 py-1 bg-gray-900 text-white text-sm font-semibold rounded-md shadow-lg
+    px-3 py-1 bg-gray-900 dark:bg-gray-100 dark:text-gray-700 text-gray-300 text-sm font-semibold rounded-md shadow-lg
     sm:block hidden
-    before:content-[''] before:absolute before:top-1/2 before:-left-2 before:w-0 before:h-0 before:border-4 before:border-transparent before:border-r-gray-900"
+    before:content-[''] before:absolute before:top-1/2 before:-left-2 before:w-0 before:h-0 before:border-4 before:border-transparent before:border-r-gray-900 dark:before:border-r-gray-100"
 >
   Visit
 </motion.div>
