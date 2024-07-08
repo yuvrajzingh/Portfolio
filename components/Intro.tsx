@@ -54,9 +54,9 @@ export default function Intro() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 1, duration: 0.5 }}
             >
-              <span className="italic">WEB DEVELOPER</span>
+              <span className="italic">SOFTWARE DEVELOPER</span>
               <br />
-              <span className="ml-[1rem] sm:ml-[3rem]">BASED IN INDIA</span>
+              <span className="">BASED IN INDIA</span>
             </motion.p>
           </div>
 

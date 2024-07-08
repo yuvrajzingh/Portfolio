@@ -58,12 +58,12 @@ export default function Contact() {
           }}
         >
           <p className="text-lg font-semibold text-lightText mb-5 dark:text-darkText">
-            PLEASE CONTACT ME DIRECTLY AT{" "}
+            MAIL AT{" "}
             <a className="underline" href="mailto:yuvisingh1810@gmail.com">
-              YUVISINGH1810@GMAIL.COM
+              <button className="p-1 text-darkText bg-light dark:bg-dark rounded-md text-base mx-1">YUVISINGH1810@GMAIL.COM</button>
             </a>{" "}
             OR THROUGH THIS FORM.
-          <p className="text-lg text-lightText mt-5 dark:text-darkText">CURRENTLY SEEKING NEW OPPORTUNITIES.</p>
+          <p className="text-lg text-light mt-5 dark:text-dark">CURRENTLY SEEKING NEW OPPORTUNITIES.</p>
           </p>
           <input
             className="h-14 px-4 rounded-[5px] borderBlack bg-white/100 dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"

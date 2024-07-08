@@ -15,7 +15,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 min-w-[95%] leading-8 scroll-mt-28"
+      className="mb-20 min-w-[95%] leading-8 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -26,9 +26,9 @@ export default function About() {
       {/* <ParallaxTitle baseVelocity={-50}>ABOUT</ParallaxTitle> */}
 
       <div className="flex py-2 text-2xl sm:text-6xl sm:py-10 flex-col-reverse sm:flex-row font-semibold text-lightText dark:text-darkText">
-        <div className="max-w-[70rem]">
+        <div className="sm:max-w-[60%]">
           <p className="mt-3 sm:mb-3 px-5">
-          As a Full Stack Developer, I focus on producing top-notch and impactful Web Applications.
+          As a Full-Stack Developer, I strive to create high-quality and impactful Web Applications.
           </p>
 
           <p className="mb-3 px-5 mt-10">

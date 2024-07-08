@@ -54,7 +54,7 @@ export default function Projects() {
         </div>
 
         <SectionDivider className="sm:w-0.5 sm:h-auto" />
-        <div className="mt-8 flex flex-col ">
+        <div className="mt-8 flex flex-col items-center">
           {projectsData.map((project, index) => (
             <React.Fragment key={index}>
               <Project {...project} />

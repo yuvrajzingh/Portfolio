@@ -36,16 +36,6 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Bachelor of Technology",
-    subtitle: "Computer Science and Engineering",
-    location: "Bhubaneswar, India",
-    oragnization: "Kalinga Institute of Industrial Technology",
-    description:
-      "CGPA: 8.69 ",
-    icon: React.createElement(LuGraduationCap),
-    date: "2020-2024",
-  },
-  {
     title: "Full-Stack Developer Intern",
     subtitle: "",
     location: "Kanpur, India",
@@ -55,6 +45,16 @@ export const experiencesData = [
     icon: React.createElement(CgWorkAlt),
     date: "May 2023 - July 2023",
   },
+  {
+    title: "Bachelor of Technology",
+    subtitle: "Computer Science and Engineering",
+    location: "Bhubaneswar, India",
+    oragnization: "Kalinga Institute of Industrial Technology",
+    description:
+      "CGPA - 8.69 ",
+    icon: React.createElement(LuGraduationCap),
+    date: "2020 - 2024",
+  }
 ] as const;
 
 export const projectsData = [
