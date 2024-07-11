@@ -87,23 +87,6 @@ export const projectsData = [
   },
 ] as const;
 
-// export const skillsData = [
-//   "HTML",
-//   "CSS",
-//   "JavaScript",
-//   "TypeScript",
-//   "React",
-//   "Next.js",
-//   "Node.js",
-//   "Git",
-//   "Tailwind",
-//   "MongoDB",
-//   "Express",
-//   "SQL",
-//   "Python",
-//   "Framer Motion",
-// ] as const;
-
 
 export const skillsData = [
   {
@@ -139,10 +122,6 @@ export const skillsData = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
   },
   {
-    name: "Django",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg"
-  },
-  {
     name: "Solidity",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/solidity/solidity-original.svg"
   },
@@ -153,6 +132,10 @@ export const skillsData = [
   {
     name: "Tailwind",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+  },
+  {
+    name: "Firebase",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
   },
   {
     name: "MongoDB",
@@ -169,6 +152,10 @@ export const skillsData = [
   {
     name: "Python",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+  },
+  {
+    name: "Django",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg"
   },
   {
     name: "Figma",
