@@ -46,7 +46,7 @@ export default function Intro() {
               transition={{ type: "tween", duration: 0.5, delay: 0.2 }}
               className="block"
             >
-              BHADOURIA.
+              BHADOURIA
             </motion.div>
             <motion.p
               className="absolute top-16 right-8 sm:top-40 sm:left-10 sm:text-lg text-xs"

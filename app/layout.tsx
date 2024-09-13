@@ -1,8 +1,7 @@
-import Header from "@/components/Header";
+
 import "./globals.css";
 import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/ActiveSectionContext";
-import Footer from "@/components/Footer";
 import ThemeSwitch from "@/components/ThemeSwitch";
 import ThemeContextProvider from "@/context/ThemeContext";
 import { Toaster } from "react-hot-toast";
@@ -19,23 +18,26 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
+
   return (
     <html lang="en" className="!scroll-smooth">
+      <ThemeContextProvider> 
       <body
-        className={`${inter.className}bg-white dark:bg-black overflow-x-hidden bg-lightBg bg-no-repeat bg-fixed text-gray-900 relative dark:bg-darkBg dark:text-gray-50 dark:text-opacity-90`}
-      >
-        {/* <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div> 
-        <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div> */}
-
-        <ThemeContextProvider> 
+        className={`${inter.className} overflow-x-hidden  text-gray-900 relative dark:text-gray-50 dark:text-opacity-90`}
+      >       
+      <div className="fixed left-0 top-0 -z-10 h-full w-full bg-lightBg bg-no-repeat bg-fixed">
+        <div className="relative h-full w-full dark:bg-black ">
+          <div className="absolute bottom-0 left-0 right-0 top-0 dark:bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+        </div>
+      </div>
           <ActiveSectionContextProvider>
-          
             {children}            
             <Toaster position="top-right" />
             <ThemeSwitch />
           </ActiveSectionContextProvider>
-        </ThemeContextProvider>
       </body>
+        </ThemeContextProvider>
     </html>
   );
 }

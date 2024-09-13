@@ -1,4 +1,4 @@
-"use client";
+
 
 import React from "react";
 import SectionHeading from "./SectionHeading";
@@ -15,15 +15,13 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-20 min-w-[95%] leading-8 scroll-mt-28"
+      className="mb-20 max-w-[95%] leading-8 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="about"
     >
       <SectionDivider className="" />
-
-      {/* <ParallaxTitle baseVelocity={-50}>ABOUT</ParallaxTitle> */}
 
       <div className="flex py-2 text-3xl sm:text-5xl sm:py-10 flex-col-reverse sm:flex-row font-semibold text-lightText dark:text-darkText">
         <div className="sm:max-w-[58%] sm:leading-tight">
@@ -32,7 +30,7 @@ export default function About() {
           </p>
 
           <p className="mb-3 px-5 mt-5">
-            I Focus on Simplicity and Aesthetics while 
+            I Focus on Minimalism and Aesthetics while 
             Creating Apps.
           </p>
         </div>
@@ -54,7 +52,7 @@ export default function About() {
             </a>
 
             <a
-              className="border-none text-[1.7rem] text-light dark:text-orange-600 flex items-center sm:text-[2.3rem] rounded-full focus:scale-[1.08] hover:scale-[1.08]  active:scale-105 transition cursor-pointer"
+              className="border-none text-[1.7rem] text-light dark:text-dark flex items-center sm:text-[2.3rem] rounded-full focus:scale-[1.08] hover:scale-[1.08]  active:scale-105 transition cursor-pointer"
               href="https://github.com/yuvrajzingh"
               target="_blank"
             >

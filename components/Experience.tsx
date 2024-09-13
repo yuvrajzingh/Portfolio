@@ -28,7 +28,7 @@ export default function Experience() {
         </SectionHeading>
         <SectionDivider className="sm:w-0.5 sm:h-auto"/>
         <div className="sm:min-w-[70rem] py-10">
-          <VerticalTimeline lineColor="">
+          <VerticalTimeline lineColor={theme === "light" ? "lightgray" : "rgba(255, 255, 255, 0.05)"}>
             {experiencesData.map((item, index) => (
               <React.Fragment key={index}>
                 <VerticalTimelineElement
