@@ -1,6 +1,4 @@
 
-
-
 "use client";
 
 import Image from "next/image";
@@ -13,7 +11,8 @@ import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./SubmitBtn";
 import toast from "react-hot-toast";
 import SectionDivider from "@/components/SectionDivider";
-import { BsArrowDownLeft, BsArrowDownRight } from "react-icons/bs";
+import { BsArrowDownLeft, BsArrowDownRight, BsClipboard, BsClipboard2, BsClipboard2Check } from "react-icons/bs";
+import { FaClipboard, FaClipboardCheck } from "react-icons/fa";
 
 export default function Contact() {
   const { ref } = useSectionInView("CONTACT");
@@ -21,6 +20,16 @@ export default function Contact() {
   // State for the form inputs
   const [senderEmail, setSenderEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isCopied, setIsCopied] = useState(false);
+  
+  const copyToClipboard = () => {
+    // Copy the sender my email to the clipboard
+    navigator.clipboard.writeText("yuvisingh1810@gmail");
+    setIsCopied(true);
+    setTimeout(() => {
+      setIsCopied(false);
+    }, 3000);
+  };
 
   return (
     <motion.section
@@ -58,9 +67,10 @@ export default function Contact() {
           }}
         >
           <p className="text-lg font-semibold text-lightText mb-5 dark:text-darkText">
-            MAIL AT{" "}
-            <a className="underline" href="mailto:yuvisingh1810@gmail.com">
-              <button className="p-1 text-darkText bg-light dark:bg-dark rounded-md text-base mx-1">YUVISINGH1810@GMAIL.COM</button>
+            MAIL AT
+            {isCopied ? <FaClipboardCheck className="inline-block mx-2 w-5 h-5 align-middle cursor-pointer"/> : <FaClipboard onClick={()=> copyToClipboard()} className="inline-block mx-2 w-5 h-5 align-middle cursor-pointer"/>}
+            <a className="underline" href="mailto:yuvisingh1810@gmail.com" target="_blank" >
+              <button className="p-1 text-darkText bg-light dark:bg-dark rounded-md text-base mx-1">YUVISINGH1810@GMAIL.COM </button>
             </a>{" "}
             OR THROUGH THIS FORM.
           <p className="text-lg text-light mt-5 dark:text-dark">CURRENTLY SEEKING NEW OPPORTUNITIES.</p>

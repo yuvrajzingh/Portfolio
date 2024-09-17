@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 const WelcomeScreen = () => (
-  <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center dark:bg-darkBg z-50">
+  <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center z-50">
     <motion.div
       className="text-4xl font-bold text-black dark:text-white"
       initial={{ opacity: 0 }}
