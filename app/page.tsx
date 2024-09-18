@@ -11,14 +11,12 @@ import {
 import LoadingScreen from "@/components/LoadingScreen";
 import WelcomeScreen from "@/components/WelcomeScreen";
 import MainContent from "@/components/MainContent";
-import { useTheme } from "@/context/ThemeContext";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
   const [showWelcome, setShowWelcome] = useState(false);
   const [showContent, setShowContent] = useState(false);
   const [hasVisited, setHasVisited] = useState(false);
-  const { theme } = useTheme();
 
   // Check if the user has visited before
   useEffect(() => {

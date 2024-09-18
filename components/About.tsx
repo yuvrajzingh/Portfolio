@@ -30,7 +30,7 @@ export default function About() {
           </p>
 
           <p className="mb-3 px-5 mt-5">
-            I Focus on Minimalism and Aesthetics while 
+            I Focus on Performance and Aesthetics while 
             Creating Apps.
           </p>
         </div>

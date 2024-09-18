@@ -9,11 +9,11 @@ const LoadingScreen: React.FC<{ hasVisited: boolean }> = ({ hasVisited }) => {
   useEffect(() => {
     // Check if `hasVisited` and set loading screen visibility accordingly
     if (hasVisited) {
-      setShouldRenderLoading(false); // Don't show loading if visited
+      setShouldRenderLoading(false); 
     } else {
-      setShouldRenderLoading(true); // Show loading if not visited
+      setShouldRenderLoading(true); 
     }
-    setIsInitialized(true); // Mark initialization as complete
+    setIsInitialized(true); 
   }, [hasVisited]);
 
   useEffect(() => {

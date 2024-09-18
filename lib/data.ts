@@ -1,11 +1,11 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import sociopedia from "@/public/sociopedia.png";
 import cartify from "@/public/cartify.png";
 import dropboxv2 from "@/public/dropboxv2.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import wordweave from "@/public/wordweave.png";
+
 
 export const links = [
   {
@@ -59,10 +59,19 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "WordWeave",
+    description:
+      "App that enables multilingual communication, allowing users to chat in their preferred languages.",
+    tags: ["Next.js", "TypeScript", "Firebase", "Firestore", "Stripe","Tailwind"],
+    link: "https://wordweave-ai.vercel.app/",
+    gitRepo: "https://github.com/yuvrajzingh/WordWeave",
+    imageUrl: wordweave,
+  },
+  {
     title: "Sciopedia",
     description:
       "A niche community-focused Social Networking and Microblogging application.",
-    tags: ["Next.js", "React", "TypeScript", "MongoDB", "Tailwind"],
+    tags: ["Next.js", "TypeScript", "MongoDB", "Tailwind"],
     link: "https://sociopedia-yuzi.vercel.app/",
     gitRepo: "https://github.com/yuvrajzingh/Sociopedia",
     imageUrl: sociopedia,
@@ -71,10 +80,20 @@ export const projectsData = [
     title: "Dropbox 2.0",
     description:
       "A file storage system to keep your files synchronized and make them accessible from anywhere.",
-    tags: ["Next.JS", "TypeScript", "Firestore", "Clerk", "Redux"],
+    tags: ["Next.JS", "TypeScript", "Firestore", "Clerk"],
     link: "https://dropbox-v2.vercel.app/",
     gitRepo: "https://github.com/yuvrajzingh/Dropbox-2.0",
     imageUrl: dropboxv2,
+  },
+  {
+    title: "Paymate",
+    description:
+      "An application that facilitates decentralized payments between individuals and businesses on the blockchain.",
+    tags: ["Solidity", "Hardhat", "MetaMask", "React.js", "Node.js", "Tailwind"],
+    link: "",
+    gitRepo: "https://github.com/yuvrajzingh/paymate",
+    imageUrl: dropboxv2,
+    undermaintenance: true
   },
   {
     title: "Cartify",
