@@ -7,6 +7,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import SectionDivider from "@/components/SectionDivider";
 import { BsArrowDownLeft, BsArrowDownRight } from "react-icons/bs";
+import Image from "next/image";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -48,7 +49,7 @@ export default function Skills() {
       custom={index}
     >
       <div className="flex items-center">
-        <img src={skill.icon} alt={skill.name} style={{ width: '40px' }} /> {/* Adjust width and height as needed */}
+        <Image src={skill.icon} alt={skill.name} width={40} height={40} /> 
         <p className="mt-1 font-medium ml-2">{skill.name}</p>
       </div>
     </motion.li>

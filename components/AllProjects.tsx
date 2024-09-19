@@ -9,10 +9,9 @@ function AllProjects() {
     <div className="overflow-hidden px-4 pb-20 pt-10 sm:pt-52 md:px-10">
       <div className="grid grid-cols-1 gap-8 p-8 sm:grid-cols-3 lg:grid-cols-2 max-w-[75rem]  mx-auto">
         {projects.map((project) => (
-          <HoverCard>
+          <HoverCard key={project.title}>
             <HoverCardTrigger asChild>
-              <div
-                key={project.title}
+              <div               
                 className="flex flex-col sm:flex-row bg-white/40 border border-gray-300 rounded-lg overflow-hidden cursor-pointer hover:bg-white/60 transition dark:text-darkText dark:bg-white/10 dark:border-gray-600 dark:hover:bg-white/5"
               >
                 {/* Image Section */}
