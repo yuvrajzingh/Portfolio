@@ -68,7 +68,7 @@ export const projectsData = [
     imageUrl: wordweave,
   },
   {
-    title: "Sciopedia",
+    title: "Sociopedia",
     description:
       "A niche community-focused Social Networking and Microblogging application.",
     tags: ["Next.js", "TypeScript", "MongoDB", "Tailwind"],
