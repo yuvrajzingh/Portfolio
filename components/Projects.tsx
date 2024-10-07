@@ -6,9 +6,7 @@ import { projectsData } from "@/lib/data";
 import Project from "./Project";
 import { useSectionInView } from "@/lib/hooks";
 import SectionDivider from "@/components/SectionDivider";
-import { BsArrowDownRight, BsArrowRight, BsArrowUpLeft, BsArrowUpRight, BsLinkedin } from "react-icons/bs";
-import ParallaxTitle from "./ParallaxTitle";
-import { FaGithubSquare } from "react-icons/fa";
+import { BsArrowDownRight, BsArrowRight, BsArrowUpRight } from "react-icons/bs";
 import Link from "next/link";
 
 export default function Projects() {
@@ -43,7 +41,7 @@ export default function Projects() {
             <BsArrowDownRight className="w-5 ml-2 mt-1 sm:pt-1" />
           </SectionHeading>
 
-          <div className="group bg-gray-900 text-sm sm:text-lg font-medium bg-opacity-20 text-light px-4 sm:py-3 rounded-[5px] flex items-center sm:gap-2  outline-none focus:scale-105 hover:scale-105 hover:bg-gray-900 active:scale-105 transition dark:bg-white dark:bg-opacity-10 dark:hover:bg-opacity-20 dark:text-dark pl-2 cursor-pointer">
+          <div className="group bg-gray-900 text-sm sm:text-lg font-medium bg-opacity-20 text-light sm:px-4 sm:py-3 rounded-[5px] flex items-center sm:gap-2  outline-none focus:scale-105 hover:scale-105 hover:bg-gray-900 active:scale-105 transition dark:bg-white dark:bg-opacity-10 dark:hover:bg-opacity-20 dark:text-dark pl-2 cursor-pointer">
             <p className=""><Link href='/projects' className="">VIEW ALL PROJECTS</Link></p>
             <BsArrowUpRight className="hidden sm:block w-5  group-hover:-translate-y-1 group-hover:translate-x-1" />
             <BsArrowRight className="sm:hidden w-5 ml-2 mt-1 sm:pt-1  group-hover:-translate-y-1 group-hover:-translate-x-1" />

@@ -49,7 +49,7 @@ export default function Intro() {
               BHADOURIA
             </motion.div>
             <motion.p
-              className="absolute top-16 right-8 sm:top-40 sm:left-10 sm:text-lg text-xs"
+              className="absolute top-16 right-5 sm:top-40 sm:left-5 sm:text-lg text-xs"
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 1, duration: 0.5 }}

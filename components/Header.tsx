@@ -19,7 +19,7 @@ const Header = () => {
           initial={{ y: -100, x: "-0.5%", opacity: 0 }}
           animate={{ y: 0, x: "-0.5%", opacity: 1 }}
         >
-          YUVRAJ SINGH
+          Y S B
         </motion.h3>
       </a>
 
